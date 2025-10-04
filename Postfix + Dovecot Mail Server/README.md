@@ -103,7 +103,7 @@ mailq
 doveadm user '*'
 
 # On App Server - Send Test Mail
-echo "Test mail" | mail -s "Test" user@example.domain
+echo "Test mail" | s-nail -s "Test" user@example.domain
 
 # Verify Delivery
 doveadm fetch -u user text mailbox INBOX
